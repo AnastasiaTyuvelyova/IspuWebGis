@@ -31,7 +31,7 @@ export class PointsContainerComponent {
     getPointsReverseGeoCode(points: Point[]): Point[] { //sample comment
         console.log(points.length);
         for (var i = 0; i < points.length; i++) {
-            let loc = points[i].latitude + "," + points[i].longitude;
+            let loc = points[i].latitude + "," + points[i].longitude; //sample comment 2
             let param = new GeocodeParams(loc);
             let index = i;
             this.geocodeService.getReverseGeocode(param).subscribe((data) => {
