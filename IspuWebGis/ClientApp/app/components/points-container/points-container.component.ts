@@ -28,7 +28,7 @@ export class PointsContainerComponent {
         this.esriMap.connectMarkers(this.points);
     }
 
-    getPointsReverseGeoCode(points: Point[]): Point[] {
+    getPointsReverseGeoCode(points: Point[]): Point[] { //sample comment
         console.log(points.length);
         for (var i = 0; i < points.length; i++) {
             let loc = points[i].latitude + "," + points[i].longitude;
